@@ -77,4 +77,8 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_response :unprocessable_entity
   end
 
+  test 'can delete products' do
+    delete product_path(products(:ps4))
+  end
+
 end
